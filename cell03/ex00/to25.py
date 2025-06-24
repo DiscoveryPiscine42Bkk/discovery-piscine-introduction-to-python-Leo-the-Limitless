@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 
-number = int(input("Enter a number less than 25: \n"))
+try:
+    number = int(input("Enter a number less than 25: \n"))
+except ValueError:
+    print("Please Enter a valid integer")
+    exit(1)
 
 if number < 25:
     while number < 26:
